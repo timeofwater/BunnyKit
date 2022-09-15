@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wools>
+    <color id="white">#E9ECEC</color>
+    <color id="orange">#F07613</color>
+    <color id="magenta">#BD44B3</color>
+    <color id="light_blue">#3AAFD9</color>
+    <color id="yellow">#F8C627</color>
+    <color id="lime">#70B919</color>
+    <color id="pink">#ED8DAC</color>
+    <color id="gray">#3E4447</color>
+    <color id="light_gray">#8E8E86</color>
+    <color id="cyan">#158991</color>
+    <color id="purple">#792AAC</color>
+    <color id="blue">#35399D</color>
+    <color id="brown">#724728</color>
+    <color id="green">#546D1B</color>
+    <color id="cyan">#A12722</color>
+    <color id="black">#141519</color>
+</wools>
