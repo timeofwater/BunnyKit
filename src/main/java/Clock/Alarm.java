@@ -88,6 +88,7 @@ public class Alarm extends JFrame {
                 int s = duration.toSecondsPart();
                 if (h + m + s == 0) {
                     ringATime();
+                    setExtendedState(NORMAL);
                 }
                 String str = "";
                 str += (h < 10) ? "0" + h : h;

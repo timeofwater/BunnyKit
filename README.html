@@ -1,0 +1,139 @@
+<html><head><meta charset="utf-8" /><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor/dist/index.css"/><script src="https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor/dist/js/i18n/zh_CN.js"></script><script src="https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor/dist/method.min.js"></script></head><body style="width: 1075px;"><div class="vditor-reset" id="preview"><h1 id="简介">简介<a id="vditorAnchor-简介" class="vditor-anchor" href="#简介"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<p>小兔制作：小兔工具（2021）</p>
+<p><strong>java 11+</strong></p>
+<p>开始是想要一个可以在全屏的时候看时间的工具 结果现在越来越多功能了</p>
+<h1 id="功能">功能<a id="vditorAnchor-功能" class="vditor-anchor" href="#功能"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<ul>
+<li>桌面时钟</li>
+<li>秒表</li>
+<li>定时器</li>
+<li>像素画生成</li>
+<li>在任何位置填充难以记忆的密码</li>
+<li>获取最新新闻</li>
+<li>玩内置的俄罗斯方块</li>
+</ul>
+<p>功能正在不断更新。</p>
+<h1 id="下载">下载<a id="vditorAnchor-下载" class="vditor-anchor" href="#下载"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h3 id="目录结构-">目录结构：<a id="vditorAnchor-目录结构-" class="vditor-anchor" href="#目录结构-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<blockquote>
+<p>BunnyKit.jar</p>
+<p>para.xml</p>
+<p>lib</p>
+<blockquote>
+<p>gson-2.9.1.jar</p>
+<p>jlayer-1.0.1.4.jar</p>
+<p>junit-3.8.2.jar</p>
+</blockquote>
+</blockquote>
+<h3 id="配置文件para-xml-">配置文件para.xml：<a id="vditorAnchor-配置文件para-xml-" class="vditor-anchor" href="#配置文件para-xml-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;para&gt;
+    &lt;!--默认时钟窗口横纵坐标和宽高（相对于屏幕左上角）（像素）--&gt;
+    &lt;x&gt;900&lt;/x&gt;
+    &lt;y&gt;200&lt;/y&gt;
+    &lt;width&gt;220&lt;/width&gt;
+    &lt;height&gt;30&lt;/height&gt;
+    &lt;!--时间模块横纵坐标和宽高（相对于窗口左上角）（像素）--&gt;
+    &lt;timeX&gt;0&lt;/timeX&gt;
+    &lt;timeY&gt;0&lt;/timeY&gt;
+    &lt;timeWidth&gt;195&lt;/timeWidth&gt;
+    &lt;timeHeight&gt;30&lt;/timeHeight&gt;
+    &lt;!--天气模块横纵坐标和宽高（相对于窗口左上角）（像素）--&gt;
+    &lt;weatherX&gt;195&lt;/weatherX&gt;
+    &lt;weatherY&gt;0&lt;/weatherY&gt;
+    &lt;weatherWidth&gt;25&lt;/weatherWidth&gt;
+    &lt;weatherHeight&gt;30&lt;/weatherHeight&gt;
+    &lt;!--字体字号--&gt;
+    &lt;font&gt;Monospaced&lt;/font&gt;
+    &lt;fontSize&gt;20&lt;/fontSize&gt;
+    &lt;!--时间显示格式--&gt;
+    &lt;timeFormatter&gt;MM,dd,星期 HH:mm:ss&lt;/timeFormatter&gt;
+    &lt;!--天气显示图标--&gt;
+    &lt;weatherIcon&gt;🐇&lt;/weatherIcon&gt;
+    &lt;!--鼠标触碰前后透明度（0-1）--&gt;
+    &lt;normalOpacity&gt;0.7&lt;/normalOpacity&gt;
+    &lt;lightOpacity&gt;0.2&lt;/lightOpacity&gt;
+    &lt;!--查询超时时间（1-10）（秒）--&gt;
+    &lt;timeout&gt;2&lt;/timeout&gt;
+    &lt;!--菜单显示内容--&gt;
+    &lt;info&gt;v1.5&lt;/info&gt;
+    &lt;!--&amp;￥ER%&amp;@_*--&gt;
+    &lt;ids&gt;
+        &lt;id name=&quot;旭日之记忆&quot;&gt;5176&lt;/id&gt;
+    &lt;/ids&gt;
+    &lt;explorer&gt;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&lt;/explorer&gt;
+    &lt;!--密码填充（不含大于号小于号）--&gt;
+    &lt;pws&gt;
+        &lt;pw name=&quot;default&quot;&gt;1234567&lt;/pw&gt;
+    &lt;/pws&gt;
+&lt;/para&gt;
+</code></pre>
+<p>其中，时间显示格式会将<code>星期</code><br />
+换成中文星期，其他符号表示见<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#format(java.time.format.DateTimeFormatter)">🔗链接</a></p>
+<h1 id="使用">使用<a id="vditorAnchor-使用" class="vditor-anchor" href="#使用"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<h3 id="启动-">启动：<a id="vditorAnchor-启动-" class="vditor-anchor" href="#启动-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>以下打开方式选择其一即可：</p>
+<ol>
+<li>双击BunnyKit.jar</li>
+<li>右键BunnyKit.jar -&gt; 打开方式 -&gt; 其他应用程序 -&gt; Java(TM) Platform SE binary</li>
+<li>上方地址栏输入<code>cmd</code>并回车 -&gt; 输入<code>java -jar BunnyKit.jar</code>并回车</li>
+</ol>
+<h3 id="退出-">退出：<a id="vditorAnchor-退出-" class="vditor-anchor" href="#退出-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<p>右键任务栏图标<img src="src/main/resources/images/icon2.png" alt="icon.png" /> -&gt; exit</p>
+<h3 id="界面-">界面：<a id="vditorAnchor-界面-" class="vditor-anchor" href="#界面-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>时间模块 由配置文件决定显示内容 10fps 整点提醒</li>
+<li>天气模块 由配置文件决定显示内容 鼠标悬浮显示天气 需要网络</li>
+</ul>
+<h3 id="右键菜单-">右键菜单：<a id="vditorAnchor-右键菜单-" class="vditor-anchor" href="#右键菜单-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>info 此处显示版本信息</li>
+<li>para 打开配置文件</li>
+<li>秒表 打开秒表</li>
+<li>闹钟 打开闹钟</li>
+</ul>
+<h3 id="任务栏菜单-">任务栏菜单：<a id="vditorAnchor-任务栏菜单-" class="vditor-anchor" href="#任务栏菜单-"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
+<ul>
+<li>picPiecer 像素画生成器</li>
+<li>bunny bot 密码填充机器人</li>
+<li>flashList 刷新密码列表</li>
+<li>flashClock 刷新时钟窗口（时间和天气）</li>
+<li>visibleClock 显示时钟</li>
+<li>hideClock 隐藏时钟</li>
+<li>some news 查询新闻</li>
+<li>Tetris Game! 内置俄罗斯方块游戏</li>
+<li>exit 退出</li>
+</ul>
+<h1 id="Q-A">Q&amp;A<a id="vditorAnchor-Q-A" class="vditor-anchor" href="#Q-A"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h1>
+<ol>
+<li>
+<p>天气无法显示？</p>
+<p>先点击，再将鼠标停留在天气模块几秒即可</p>
+</li>
+<li>
+<p>时间符号不知道怎样对应？</p>
+<p>常用符号：</p>
+<ul>
+<li><code>星期</code> 中文星期</li>
+<li><code>yyyy</code> 年</li>
+<li><code>MM</code> 月</li>
+<li><code>dd</code> 日</li>
+<li><code>HH</code> 时</li>
+<li><code>mm</code> 分</li>
+<li><code>ss</code> 秒</li>
+</ul>
+</li>
+<li>
+<p>什么时候更新新功能？</p>
+<p>有空的时候</p>
+</li>
+<li>
+<p>为什么实际功能和文档有些出入？</p>
+<p>懒得更新文档，以实际功能为准</p>
+</li>
+<li>
+<p>这个项目是开源的吗？</p>
+<p>里面也没啥东西，有心做的话很快就能做出来，有需要源码的请私信</p>
+</li>
+</ol>
+</div><script>    const previewElement = document.getElementById('preview');    Vditor.setContentTheme('idea-light', 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor/dist/css/content-theme');    Vditor.codeRender(previewElement);    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor');    Vditor.mathRender(previewElement, { cdn: 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor',math: {"engine":"KaTeX","inlineDigit":true,"macros":{}}});    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor', 'light');    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor');    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor');    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor', 'light');    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor', 'light');    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor');    Vditor.mediaRender(previewElement);    Vditor.speechRender(previewElement); </script>  <script src="https://cdn.jsdelivr.net/gh/shuzijun/markdown-editor@1.12/src/main/resources/vditor/dist/js/icons/ant.js"></script></body></html>

@@ -18,23 +18,25 @@ public class BiliBoot {
         mainPopupMenu.add(playMenu);
         MenuItem flashMenuItem = new MenuItem("flashLives");
         flashMenuItem.addActionListener((e) -> flash(playMenu, helper));
-        new Thread(() -> flash(playMenu, helper)).start();
+        flash(playMenu, helper);
         mainPopupMenu.add(flashMenuItem);
         mainPopupMenu.addSeparator();
 
     }
 
     static void flash(Menu playMenu, BilibiliHelper bilibiliHelper) {
-        playMenu.removeAll();
-        bilibiliHelper.searchAll();
-        System.out.println(bilibiliHelper.getLiveStatus());
-        bilibiliHelper.getLiveStatus().forEach((id, status) -> {
-            if (status.equals("1")) {
-                String name = bilibiliHelper.getIdAndName().get(id);
-                MenuItem loopItem = new MenuItem(name);
-                loopItem.addActionListener((event) -> bilibiliHelper.openLiveRoom(id));
-                playMenu.add(loopItem);
-            }
-        });
+        new Thread(() -> {
+            playMenu.removeAll();
+            bilibiliHelper.searchAll();
+            System.out.println(bilibiliHelper.getLiveStatus());
+            bilibiliHelper.getLiveStatus().forEach((id, status) -> {
+                if (status.equals("1")) {
+                    String name = bilibiliHelper.getIdAndName().get(id);
+                    MenuItem loopItem = new MenuItem(name);
+                    loopItem.addActionListener((event) -> bilibiliHelper.openLiveRoom(id));
+                    playMenu.add(loopItem);
+                }
+            });
+        }).start();
     }
 }
