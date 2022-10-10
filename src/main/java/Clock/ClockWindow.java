@@ -142,6 +142,7 @@ public class ClockWindow {
                     dx += frame.getX();
                     dy += frame.getY();
                     frame.setLocation(dx, dy);
+                    rightClickPopup.setClockWindowLocation(dx, dy);
                 }
             }
 

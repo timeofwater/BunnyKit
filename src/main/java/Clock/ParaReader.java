@@ -10,6 +10,7 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
+import java.util.HashMap;
 
 /**
  * @author Shang Zemo on 2022/6/10
@@ -38,6 +39,7 @@ public class ParaReader {
     private final float lightOpacity = 0.1f;
     private final double timeout = 1;
     private final String info = "Shang Zemo";
+    private final String explorer = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe";
 
     ParaReader(String file) {
         this.file = file;
@@ -252,4 +254,43 @@ public class ParaReader {
         return result;
     }
 
+    String getExplorer() {
+        String result = info;
+        try {
+            result = xPath.evaluate("/para/explorer", document);
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    HashMap<String, String> getIds() {
+        HashMap<String, String> result = new HashMap<>();
+        try {
+            int num = xPath.evaluateExpression("count(/para/ids/id)", document, Integer.class);
+            for (int i = 1; i <= num; i++) {
+                String key = xPath.evaluate("/para/ids/id[" + i + "]/@name", document);
+                String value = xPath.evaluate("/para/ids/id[" + i + "]", document);
+                result.put(key, value);
+            }
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    HashMap<String, String> getPws() {
+        HashMap<String, String> result = new HashMap<>();
+        try {
+            int num = xPath.evaluateExpression("count(/para/pws/pw)", document, Integer.class);
+            for (int i = 1; i <= num; i++) {
+                String key = xPath.evaluate("/para/pws/pw[" + i + "]/@name", document);
+                String value = xPath.evaluate("/para/pws/pw[" + i + "]", document);
+                result.put(key, value);
+            }
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }
