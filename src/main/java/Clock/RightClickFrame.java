@@ -127,6 +127,9 @@ public class RightClickFrame extends JFrame {
                     newParas.put("x", "" + clockWindowLocation.x);
                     newParas.put("y", "" + clockWindowLocation.y);
                     writer.updatePara(newParas);
+                    moveLocationButton.setBackground(Color.green);
+                } else {
+                    moveLocationButton.setBackground(Color.red);
                 }
             }
 
