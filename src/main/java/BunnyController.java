@@ -3,6 +3,7 @@ import BitmapPiecer.PiecerBoot;
 import BunnyBot.BotBoot;
 import Clock.ClockBoot;
 import SCINews.NewsBoot;
+import ScreenPrint.PrintBoot;
 import Tetris.GameBoot;
 
 import javax.imageio.ImageIO;
@@ -30,6 +31,7 @@ public class BunnyController {
                 // add boot here
                 BiliBoot.otherBoot(paraPath, popupMenu);
                 PiecerBoot.otherBoot(popupMenu);
+                PrintBoot.otherBoot(popupMenu);
                 BotBoot.otherBoot(paraPath, popupMenu);
                 ClockBoot.otherBoot(paraPath, popupMenu);
                 NewsBoot.otherBoot(popupMenu);

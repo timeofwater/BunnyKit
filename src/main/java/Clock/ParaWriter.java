@@ -185,7 +185,7 @@ public class ParaWriter {
             writer.writeComment("密码填充（不含大于号小于号）");
 
             writer.writeStartElement("pws");
-            writer.writeAttribute("warning", "不能含有%lt;、%rt;");
+            writer.writeAttribute("warning", "特殊符号需要用对应的字符实体");
             for (String pw :
                     pws.keySet()) {
                 writer.writeStartElement("pw");

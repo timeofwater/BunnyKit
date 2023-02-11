@@ -1,1 +1,30 @@
-<?xml version="1.0" ?><para><!--默认时钟窗口横纵坐标和宽高（相对于屏幕左上角）（像素）--><x>-517</x><y>241</y><width>220</width><height>30</height><!--时间模块横纵坐标和宽高（相对于窗口左上角）（像素）--><timeX>0</timeX><timeY>0</timeY><timeWidth>195</timeWidth><timeHeight>30</timeHeight><!--天气模块横纵坐标和宽高（相对于窗口左上角）（像素）--><weatherX>195</weatherX><weatherY>0</weatherY><weatherWidth>25</weatherWidth><weatherHeight>30</weatherHeight><!--字体字号--><font>Monospaced</font><fontSize>20</fontSize><!--时间显示格式--><timeFormatter>MM,dd,星期 HH:mm:ss</timeFormatter><!--天气显示图标--><weatherIcon>🐇</weatherIcon><!--鼠标触碰前后透明度（0-1）--><normalOpacity>0.7</normalOpacity><lightOpacity>0.2</lightOpacity><!--查询超时时间（1-10）（秒）--><timeout>3</timeout><!--右键菜单显示内容--><info>v1.5</info><!--&￥ER%&@_*--><explorer>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</explorer><ids><id name="旭日之记忆">5176</id></ids><!--密码填充（不含大于号小于号）--><pws warning="不能含有%lt;、%rt;"><pw name="default">1234567</pw></pws></para>
+<?xml version="1.0" ?>
+<para><!--默认时钟窗口横纵坐标和宽高（相对于屏幕左上角）（像素）-->
+    <x>1115</x>
+    <y>248</y>
+    <width>220</width>
+    <height>30</height><!--时间模块横纵坐标和宽高（相对于窗口左上角）（像素）-->
+    <timeX>0</timeX>
+    <timeY>0</timeY>
+    <timeWidth>195</timeWidth>
+    <timeHeight>30</timeHeight><!--天气模块横纵坐标和宽高（相对于窗口左上角）（像素）-->
+    <weatherX>195</weatherX>
+    <weatherY>0</weatherY>
+    <weatherWidth>25</weatherWidth>
+    <weatherHeight>30</weatherHeight><!--字体字号-->
+    <font>Monospaced</font>
+    <fontSize>20</fontSize><!--时间显示格式-->
+    <timeFormatter>MM,dd,星期 HH:mm:ss</timeFormatter><!--天气显示图标-->
+    <weatherIcon>🐇</weatherIcon><!--鼠标触碰前后透明度（0-1）-->
+    <normalOpacity>0.7</normalOpacity>
+    <lightOpacity>0.2</lightOpacity><!--查询超时时间（1-10）（秒）-->
+    <timeout>3</timeout><!--右键菜单显示内容-->
+    <info>v1.6</info><!--&￥ER%&@_*-->
+    <explorer>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</explorer>
+    <ids>
+        <id name="旭日之记忆">5176</id>
+    </ids><!--密码填充（不含大于号小于号）-->
+    <pws warning="不能含有%lt;、%rt;">
+        <pw name="default">1234567</pw>
+    </pws>
+</para>
