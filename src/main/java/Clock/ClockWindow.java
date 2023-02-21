@@ -34,10 +34,13 @@ public class ClockWindow {
     ActionListener exitActionListener;
     ActionListener hideActionListener;
     ActionListener visibleActionListener;
+    ActionListener muteActionListener;
+    ActionListener unmuteActionListener;
     MouseListener mouseListener;
     Runnable timerRunnable;
     static URL ringURL;
     Player audioPlayer;
+    static Boolean isMute;
 
     Thread timer;
     String[] datesList = {"日", "一", "二", "三", "四", "五", "六", "日"};
@@ -75,7 +78,7 @@ public class ClockWindow {
         } catch (JavaLayerException | IOException e) {
             e.printStackTrace();
         }
-
+        isMute = false;
 
         //menu
         changeMenuPane();
@@ -114,6 +117,20 @@ public class ClockWindow {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frame.setVisible(true);
+            }
+        };
+
+        muteActionListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isMute = true;
+            }
+        };
+
+        muteActionListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isMute = false;
             }
         };
 
@@ -241,7 +258,11 @@ public class ClockWindow {
             try {
                 if (audioPlayer != null) {
                     System.out.println("ring on the hour");
-                    audioPlayer.play();
+                    if (isMute) {
+                        System.out.println("ring on the hour, but mute.");
+                    } else {
+                        audioPlayer.play();
+                    }
                 } else {
                     System.out.println("error!\n\taudioPlayer : null");
                 }

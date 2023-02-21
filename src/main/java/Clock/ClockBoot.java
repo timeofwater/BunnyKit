@@ -45,7 +45,7 @@ public class ClockBoot {
         }
     }
 
-    public static void otherBoot(String paraPath,PopupMenu mainPopupMenu){
+    public static void otherBoot(String paraPath, PopupMenu mainPopupMenu) {
         ClockWindow body = new ClockWindow(paraPath);
 
         if (SystemTray.isSupported()) {
@@ -58,6 +58,13 @@ public class ClockBoot {
             MenuItem hideMenuItem = new MenuItem("hideClock");
             hideMenuItem.addActionListener(body.hideActionListener);
             mainPopupMenu.add(hideMenuItem);
+            mainPopupMenu.addSeparator();
+            MenuItem muteMenuItem = new MenuItem("muteClock");
+            muteMenuItem.addActionListener(body.muteActionListener);
+            mainPopupMenu.add(muteMenuItem);
+            MenuItem unmuteMenuItem = new MenuItem("un-muteClock");
+            unmuteMenuItem.addActionListener(body.unmuteActionListener);
+            mainPopupMenu.add(unmuteMenuItem);
             mainPopupMenu.addSeparator();
 
         }
