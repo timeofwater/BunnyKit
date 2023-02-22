@@ -127,7 +127,7 @@ public class ClockWindow {
             }
         };
 
-        muteActionListener = new ActionListener() {
+        unmuteActionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 isMute = false;
