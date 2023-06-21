@@ -93,6 +93,7 @@ public class BotBoot {
             String pw;
             String name;
 
+            playMenu.removeAll();
             for (int i = 1; i <= numbersOfPws; i++) {
                 name = xPath.evaluate("/para/pws/pw[" + i + "]/@name", document);
                 pw = xPath.evaluate("/para/pws/pw[" + i + "]", document);

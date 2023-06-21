@@ -78,7 +78,7 @@ public class ClockWindow {
         } catch (JavaLayerException | IOException e) {
             e.printStackTrace();
         }
-        isMute = false;
+        isMute = true;
 
         //menu
         changeMenuPane();
